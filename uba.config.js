@@ -48,7 +48,7 @@ const proxyConfig = [
     },
     // context，如果不配置，默认就是代理全部。
     router: [
-      '/spring_train'
+      '/iuap-simpletrain'
     ],
     url: 'http://127.0.0.1:9688'
   }
@@ -56,7 +56,7 @@ const proxyConfig = [
 
 const globalEnvConfig = new webpack.DefinePlugin({
   __MODE__: JSON.stringify(process.env.NODE_ENV),
-  GROBAL_HTTP_CTX: JSON.stringify("/spring_train")
+  GROBAL_HTTP_CTX: JSON.stringify("/iuap-simpletrain")
 })
 
 const MINIMIZE_FLAG = (process.env.NODE_ENV == "production") ? true : false;
